@@ -52,11 +52,11 @@ class RootsAndPatternsRepository(object):
         #example: basePath= 'D:\1\Learning\NLP\برامج\الخليل\AlKhalil_1\db\'
                 
 #        self.NominalRoots = self.LoadRoots(basePath + 'nouns\\'+ rootsFolder +'\\')
-        self.VerbalRoots = self.LoadRoots(basePath + 'verbs\\'+ rootsFolder +'\\')
+        self.VerbalRoots = self.LoadRoots(os.path.join(basePath ,'verbs', rootsFolder))
 #        self.UnvoweledNominalPatterns = self.LoadUnvoweledPatterns(basePath + 'nouns\\patterns\\Unvoweled\\')
-        self.UnvoweledVerbalPatterns = self.LoadUnvoweledPatterns(basePath + 'verbs\\patterns\\Unvoweled\\')
+        self.UnvoweledVerbalPatterns = self.LoadUnvoweledPatterns(os.path.join(basePath, 'verbs','patterns','Unvoweled'))
 #        self.VoweledNominalPatterns = self.LoadVoweledNominalPatterns(basePath + 'nouns\\patterns\\Voweled\\')
-        self.VoweledVerbalPatterns = self.LoadVoweledVerbalPatterns(basePath + 'verbs\\patterns\\Voweled\\')
+        self.VoweledVerbalPatterns = self.LoadVoweledVerbalPatterns(os.path.join(basePath,'verbs','patterns','Voweled'))
         
         
     pass
