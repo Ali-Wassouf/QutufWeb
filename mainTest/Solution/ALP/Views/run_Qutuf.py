@@ -38,10 +38,10 @@ overdureTaggingTopReservants  = None
 '''
 The next few parameters are fixed do not change them.
 '''
-procliticsXmlFile = baseDirectoryOfQutufDB + 'MorphologyTransducers\\Proclitics.xml'
-encliticsXmlFile = baseDirectoryOfQutufDB + 'MorphologyTransducers\\Enclitics.xml'
-prematureTaggingRulesXmlFile = baseDirectoryOfQutufDB + 'TaggingRepository\\PrematureTaggingRules.xml'
-overdueTaggingRulesXmlFile = baseDirectoryOfQutufDB + 'TaggingRepository\\OverdueTaggingRules.xml'
+procliticsXmlFile = os.path.join(baseDirectoryOfQutufDB, 'MorphologyTransducers','Proclitics.xml')
+encliticsXmlFile = os.path.join(baseDirectoryOfQutufDB,'MorphologyTransducers','Enclitics.xml')
+prematureTaggingRulesXmlFile = os.path.join(baseDirectoryOfQutufDB, 'TaggingRepository','PrematureTaggingRules.xml')
+overdueTaggingRulesXmlFile = os.path.join(baseDirectoryOfQutufDB, 'TaggingRepository','OverdueTaggingRules.xml')
 rootsFolder = 'roots2'
 
 def runit(phrase):
