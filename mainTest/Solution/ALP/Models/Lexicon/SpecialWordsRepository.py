@@ -63,7 +63,7 @@ class SpecialWordsRepository(object):
 
         file = 'propernouns.xml'
         tempDict = dict()
-        xmldoc = minidom.parse(path + file)
+        xmldoc = minidom.parse(os.path.join(path, file))
         for xmlRoot in xmldoc.getElementsByTagName('propernoun'):
             unvoweled = xmlRoot.attributes['unvoweledform'].value
             voweled = xmlRoot.attributes['voweledform'].value
