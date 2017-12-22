@@ -53,9 +53,9 @@ class SpecialWordsRepository(object):
         self.Particles = self.LoadParticles(os.path.join(basePath, 'specialwords'))
 
         file = 'closednouns.xml'
-        self.ClosedNouns = self.LoadClosedNouns(os.path.join(basePath, 'specialwords', file))
+        self.ClosedNouns = self.LoadClosedNouns(os.path.join(basePath, 'specialwords'), file)
         file = 'compoundnouns.xml'
-        self.CompoundNouns = self.LoadClosedNouns(os.path.join(basePath, 'specialwords', file))
+        self.CompoundNouns = self.LoadClosedNouns(os.path.join(basePath, 'specialwords'), file)
 
     pass
 
