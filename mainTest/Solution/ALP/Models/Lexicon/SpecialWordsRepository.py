@@ -53,9 +53,9 @@ class SpecialWordsRepository(object):
         self.Particles = self.LoadParticles(os.path.join(basePath, 'specialwords'))
 
         file = 'closednouns.xml'
-        self.ClosedNouns = self.LoadClosedNouns(os.path.join(basePath, 'specialwords', file))
+        self.ClosedNouns = self.LoadClosedNouns(os.path.join(basePath, 'specialwords'), file)
         file = 'compoundnouns.xml'
-        self.CompoundNouns = self.LoadClosedNouns(os.path.join(basePath, 'specialwords', file))
+        self.CompoundNouns = self.LoadClosedNouns(os.path.join(basePath, 'specialwords'), file)
 
     pass
 
@@ -83,7 +83,7 @@ class SpecialWordsRepository(object):
     def LoadClosedNouns(self, path, file):
 
         tempDict = dict()
-        xmldoc = minidom.parse(path + file)
+        xmldoc = minidom.parse(os.path.join(path, file))
         for xmlRoot in xmldoc.getElementsByTagName('noun'):
             unvoweled = xmlRoot.attributes['unvoweledform'].value
             voweled = xmlRoot.attributes['voweledform'].value
@@ -127,7 +127,7 @@ class SpecialWordsRepository(object):
 
         tempDict = dict()
         tempList = []
-        xmldoc = minidom.parse(path + file)
+        xmldoc = minidom.parse(os.path.join(path, file))
         for xmlRoot in xmldoc.getElementsByTagName('particle'):
             unvoweled = xmlRoot.attributes['unvoweledform'].value
             voweled = xmlRoot.attributes['voweledform'].value
