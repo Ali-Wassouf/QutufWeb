@@ -3,8 +3,10 @@ Created on ٢٨‏/٠٦‏/٢٠١٠
 
 @Created by: Muhammad Altabba
 '''
-from xml.dom import minidom
 
+import os
+
+from xml.dom import minidom
 from ....ALP.Models.Lexicon.SpecialWords.StandAloneParticle import *
 from ....ALP.Models.Lexicon.SpecialWords.ProperNoun import *
 from ....ALP.Models.Lexicon.SpecialWords.ClosedNouns import *
@@ -47,13 +49,13 @@ class SpecialWordsRepository(object):
 
     def Load(self, basePath):
 
-        self.ProperNouns = self.LoadProperNouns(basePath + 'specialwords\\')
-        self.Particles = self.LoadParticles(basePath + 'specialwords\\')
+        self.ProperNouns = self.LoadProperNouns(os.path.join(basePath,'specialwords'))
+        self.Particles = self.LoadParticles(os.path.join(basePath, 'specialwords'))
 
         file = 'closednouns.xml'
-        self.ClosedNouns = self.LoadClosedNouns(basePath + 'specialwords\\', file)
+        self.ClosedNouns = self.LoadClosedNouns(os.path.join(basePath, 'specialwords', file))
         file = 'compoundnouns.xml'
-        self.CompoundNouns = self.LoadClosedNouns(basePath + 'specialwords\\', file)
+        self.CompoundNouns = self.LoadClosedNouns(os.path.join(basePath, 'specialwords', file))
 
     pass
 
