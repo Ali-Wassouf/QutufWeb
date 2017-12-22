@@ -6,6 +6,7 @@ Created on ١١‏/٠٥‏/٢٠١٠
 
 import codecs
 from ....root import ROOT_DIR
+import os
 print(ROOT_DIR)
 
 from ...ALP.Controllers.TextEntities.TextEncapsulator import *
@@ -17,11 +18,11 @@ Change the next few parameters as appropriate.
 '''
 
 baseDirectory = ROOT_DIR
-baseDirectoryOfQutufDB = baseDirectory + "\\Data\\"
-inputTextFile = baseDirectoryOfQutufDB + 'test_Qutuf.txt'
-baseDirectoryOfAlKhalilDB = baseDirectory + '\\AlKhalil_V1_Modified\\db\\'
-ouputXmlFile = baseDirectory+'\\Output\\test.xml'
-ouputHtmlFile = baseDirectory+'\\Output\\test.html'
+baseDirectoryOfQutufDB = os.path.join(baseDirectory,'Data')
+inputTextFile = os.path.join(baseDirectoryOfQutufDB,'test_Qutuf.txt')
+baseDirectoryOfAlKhalilDB = os.path.join(baseDirectory,'AlKhalil_V1_Modified','db')
+ouputXmlFile = os.path.join(baseDirectory,'Output','test.xml')
+ouputHtmlFile = os.path.join(baseDirectory,'Output','test.html')
 
 
 #Set Operations Variables:
