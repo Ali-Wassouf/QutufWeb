@@ -71,7 +71,7 @@ class RootsAndPatternsRepository(object):
                 if file.endswith('.xml'):
 #                    tempList = []
                     tempSubDict = {}
-                    xmldoc = minidom.parse(root+file)
+                    xmldoc = minidom.parse(os.path.join(root,file))
                     for xmlRoot in xmldoc.getElementsByTagName('root'):
                         val = xmlRoot.attributes['val'].value
                         vect = xmlRoot.attributes['vect'].value.split()
@@ -95,7 +95,7 @@ class RootsAndPatternsRepository(object):
                 if file.endswith('.xml'):
                     tempSubDict = {} #Based on the String of the Pattern 
                     tempDict[int(file[file.find('.')-1])] = tempSubDict
-                    xmldoc = minidom.parse(root+file)
+                    xmldoc = minidom.parse(os.path.join(root,file))
                     for xmlRoot in xmldoc.getElementsByTagName('pattern'):
                         value = xmlRoot.attributes['value'].value
                         rules = xmlRoot.attributes['rules'].value.split()
@@ -116,7 +116,7 @@ class RootsAndPatternsRepository(object):
                 if file.endswith('.xml'):
                     tempSubDict = {} #Based on IDs
                     tempDict[int(file[file.find('.')-1])] = tempSubDict
-                    xmldoc = minidom.parse(root+file)
+                    xmldoc = minidom.parse(os.path.join(root,file))
                     for xmlRoot in xmldoc.getElementsByTagName('pattern'):
                         id = int(xmlRoot.attributes['id'].value)
                         diac = xmlRoot.attributes['diac'].value
@@ -159,7 +159,7 @@ class RootsAndPatternsRepository(object):
                 if file.endswith('.xml'):
                     tempSubDict = {} #Based on IDs
                     tempDict[int(file[file.find('.')-1])] = tempSubDict
-                    xmldoc = minidom.parse(root+file)
+                    xmldoc = minidom.parse(os.path.join(root,file))
                     for xmlRoot in xmldoc.getElementsByTagName('pattern'):
                         id = int(xmlRoot.attributes['id'].value)
                         diac = xmlRoot.attributes['diac'].value
