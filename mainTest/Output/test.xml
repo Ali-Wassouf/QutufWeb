@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Text>
+	<Sentence original_string="غير.">
+		<Word number_of_possibilities="6" original_string="غير">
+			<SurfaceFormMorphemes certainty="0" voweled_form="غَيَّرَ">
+				<Proclitcs/>
+				<Cliticless arabic_description="فعل, مذكر, مفرد, مسند إلى الغائب, -, ماض, مبني للمعلوم, لازمٌ أو مُتعدٍ, ؟, -, مزيد" tag="v,m,s,t,-,p,a,iobt,؟">
+					<Pattern Lemma="غير" root="غير" unoweled="فعل" voweled="فَعَّلَ"/>
+				</Cliticless>
+				<Enclitics/>
+			</SurfaceFormMorphemes>
+			<SurfaceFormMorphemes certainty="0" voweled_form="غَيِّرْ">
+				<Proclitcs/>
+				<Cliticless arabic_description="فعل, مذكر, مفرد, مسند إلى المخاطب, -, أمر, -, لازمٌ أو مُتعدٍ, ؟, غير مؤكد, مزيد" tag="v,m,s,s,-,i,-,iobt,؟">
+					<Pattern Lemma="غير" root="غير" unoweled="فعل" voweled="فَعِّلْ"/>
+				</Cliticless>
+				<Enclitics>
+					<Enclitic arabic_description="اسم, مذكر, مفرد, ؟, مرفوع, ضمير رفع, معرفة, مضمر/مقدّر" tag="n,m,s,؟,n,p,d"/>
+				</Enclitics>
+			</SurfaceFormMorphemes>
+			<SurfaceFormMorphemes certainty="0" voweled_form="غُيِّرَ">
+				<Proclitcs/>
+				<Cliticless arabic_description="فعل, مذكر, مفرد, مسند إلى الغائب, -, ماض, مبني للمجهول, لازمٌ أو مُتعدٍ, ؟, -, مزيد" tag="v,m,s,t,-,p,p,iobt,؟">
+					<Pattern Lemma="غير" root="غير" unoweled="فعل" voweled="فُعِّلَ"/>
+				</Cliticless>
+				<Enclitics/>
+			</SurfaceFormMorphemes>
+			<SurfaceFormMorphemes certainty="0" voweled_form="غِيرَ">
+				<Proclitcs/>
+				<Cliticless arabic_description="فعل, مذكر, مفرد, مسند إلى الغائب, -, ماض, مبني للمجهول, لازمٌ أو مُتعدٍ, ؟, -, مجرد" tag="v,m,s,t,-,p,p,iobt,؟">
+					<Pattern Lemma="غير" root="غير" unoweled="فعل" voweled="فِعلَ"/>
+				</Cliticless>
+				<Enclitics/>
+			</SurfaceFormMorphemes>
+			<SurfaceFormMorphemes certainty="0" voweled_form="غِيرَ">
+				<Proclitcs/>
+				<Cliticless arabic_description="فعل, مذكر, مفرد, مسند إلى الغائب, -, ماض, مبني للمجهول, لازمٌ أو مُتعدٍ, ؟, -, مجرد" tag="v,m,s,t,-,p,p,iobt,؟">
+					<Pattern Lemma="غير" root="غور" unoweled="فيل" voweled="فِيلَ"/>
+				</Cliticless>
+				<Enclitics/>
+			</SurfaceFormMorphemes>
+			<SurfaceFormMorphemes certainty="0" voweled_form="غَيْر">
+				<Proclitcs/>
+				<Cliticless arabic_description="حرف, حرف استثناء, ظاهر" tag="p,x"/>
+				<Enclitics/>
+			</SurfaceFormMorphemes>
+		</Word>
+		<Word number_of_possibilities="0" original_string="."/>
+	</Sentence>
+</Text>
